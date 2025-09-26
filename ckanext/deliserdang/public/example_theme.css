@@ -1,6 +1,6 @@
 .masthead .main-navbar ul li:hover a, .masthead .main-navbar ul li:focus a, .masthead .main-navbar ul li.active a {
-  border-radius: 0.3rem;
-  background-color: #0042be;
+  border-radius: 0.3rem !important;
+  background-color: #0042be !important;
 }
 .account-masthead {
   background: radial-gradient(circle, rgba(0, 71, 171, 1) 0%, rgba(0, 37, 89, 1) 100%);
@@ -46,4 +46,5 @@ a.media-image img {
   --bs-btn-disabled-bg: #206b82;
   --bs-btn-disabled-border-color: #206b82;
 }
+
 
