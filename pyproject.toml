@@ -1,0 +1,38 @@
+[project]
+name = "ckanext-deliserdang"
+version = "0.0.1"
+description = "Tema CKAN Kabupaten Deli Serdang"
+readme = "README.md"
+authors = [
+    {name = "Kicky Maulana", email = "kickymaulana@gmail.com"}
+]
+license = {text = "AGPL"}
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+
+keywords = [ "CKAN", ]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/kickymaulana/ckanext-deliserdang"
+
+[project.entry-points."ckan.plugins"]
+deliserdang = "ckanext.deliserdang.plugin:DeliserdangPlugin"
+
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+filterwarnings = [
+        "ignore::sqlalchemy.exc.SADeprecationWarning",
+        "ignore::sqlalchemy.exc.SAWarning",
+        "ignore::DeprecationWarning",
+]
+addopts = "--ckan-ini test.ini"

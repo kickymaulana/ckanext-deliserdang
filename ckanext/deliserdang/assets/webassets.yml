@@ -1,0 +1,14 @@
+# deliserdang-js:
+#   filter: rjsmin
+#   output: ckanext-deliserdang/%(version)s-deliserdang.js
+#   contents:
+#     - js/deliserdang.js
+#   extra:
+#     preload:
+#       - base/main
+
+# deliserdang-css:
+#   filter: cssrewrite
+#   output: ckanext-deliserdang/%(version)s-deliserdang.css
+#   contents:
+#     - css/deliserdang.css
